@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Bank</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <header>
+        <div class="headerContainer">
+            <div class="logo">
+                <img src="./assets/logo.png" alt="logo" width="150px">
+            </div>
+
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <a href="#">Kreditlər</a>
+                    </li>
+                    <li>
+                        <a href="#">Kartlar</a>
+                    </li>
+                    <li>
+                        <a href="#">Köçürmələr</a>
+                    </li>
+                    <li>
+                        <a href="#">Digər xidmətlər</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="loginPart">
+            <div id="formConatiner">
+                <form id="form" action="">
+                    <div class="formText">Onlayn Depozit Artımı</div>
+                    <div class="formInput">
+                        <label for="">Müştəri İD:</label>
+                        <input type="text" id="formId" placeholder="Ender your ID..">
+                        <label for="">Pin Kod:</label>
+                        <div class="parol">
+                            <input type="password" id="formParol" placeholder="Enter your password..">
+                            <input type="checkbox" id="showBtn">
+                        </div>
+                        <button id="loginBtn">Log In</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!--SECTION2 SECTION2 SECTION2 SECTION2 SECTION2 SECTION2 SECTION2 SECTION2-->
+
+        <section id="balancePart" style="display: none;">
+            <div class="bpContainer">
+                <p class="bpTitle">Dear, welcome to Express ATM</p>
+                <p class="bpBalance">Your Current Balance: 0 AZN</p>
+                <input type="number" id="bpInput" placeholder="Enter amount">
+                <div class="btn">
+                    <button id="bpAddBtn">ADD</button>
+                    <button id="bpCashBtn">CASH</button>
+                </div>
+                <button id="bpExitBtn">&#8592</button>
+            </div>
+
+
+        </section>
+    </main>
+    <script src="./main.js"></script>
+</body>
+
+</html>
